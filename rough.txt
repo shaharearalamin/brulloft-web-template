@@ -1,0 +1,326 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Sail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff-body: 'Libre Bodoni', sans-serif;
+    --ff-h: 'Libre Bodoni', sans-serif;
+    --ff-s: 'sail', system-ui;
+    --primary-font: 'Open Sans', sans-serif;
+    --ff-fontawesome: "Font Awesome 6 Pro";
+    --common-white: #fff;
+    --common-black: #000000;
+    --grey-1: #f2f4f9;
+    --grey-2: #203240;
+    --text-body: #54595F;
+    --heading-1: #051145;
+    --theme-1: #1B7261;
+    --border-1: #ebebeb;
+    --shadow:0px 0px 5px rgba(0, 0, 0, 0.3) ;
+    --shadow2: 5px 5px 15px 0px #0000001A;
+    --ff-p: 'Open Sans', sans-serif;
+
+    /*  
+    --rr-ff-body: 'Libre Bodoni', sans-serif;
+    --rr-ff-h: 'Libre Bodoni', sans-serif;
+    --rr-ff-s: 'sail', system-ui;
+    
+    --rr-ff-fontawesome: "Font Awesome 6 Pro";
+    --rr-common-white: #fff;
+    --rr-common-black: #000000;
+    --rr-grey-1: #f2f4f9;
+    --rr-grey-2: #203240;
+    --rr-text-body: #54595F;
+    --rr-heading-1: #051145;
+    --rr-theme-1: #1B7261;
+    --rr-border-1: #ebebeb;
+    */
+}
+
+
+
+/* start aboute hero section  */
+#aboutOfHero{
+  width: 100%;
+  height: 450px;
+  background-color: #f5f7ff;
+  position: relative;
+  margin-bottom: 100px !important;
+
+}
+
+#animationImgOne img:nth-child(1){
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  animation: imgOne 2s ease-in-out infinite ;
+  animation-direction: alternate;
+}
+#animationImgOne img:nth-child(2){
+  position: absolute;
+  top: -100px ;
+  right: -20px;
+  animation: imgTwo 2s ease-in-out infinite ;
+  animation-direction: alternate;
+}
+
+@keyframes imgOne {
+  0%{
+  left: 20px;
+  bottom: 5px;
+  }
+  50%{
+  left: -5px;
+  bottom: 0px;
+  }
+  100%{
+  left: 0px;
+  bottom: 0px;
+  }
+}
+@keyframes imgTwo {
+  0%{
+    top: -100px;
+    right: -80px;
+  }
+  100%{
+    top: -90px;
+    right: -80px;
+  }
+}
+
+.aboutContainer{
+  height: 100% !important;
+  display: grid;
+  place-items: center ;
+  position: relative;
+}
+
+.aboutContainer span:nth-child(1){
+  position: absolute;
+  left: 0;
+  top: 100px ;
+  animation: inlineImgOne 2s ease-in-out infinite ;
+  animation-direction: alternate;
+}
+.aboutContainer span:nth-child(2){
+  position: absolute;
+  top: 20px ;
+  right: 50px;
+  animation: inlineImgTwo 2s ease-in-out infinite ;
+  animation-direction: alternate;
+}
+
+@keyframes inlineImgOne {
+  0%{
+    transform: rotate(-30deg);
+  }
+  100%{
+  transform: rotate(0deg);
+  }
+}
+@keyframes inlineImgTwo {
+  0%{
+    transform: rotate(-30deg);
+  }
+  100%{
+  transform: rotate(0deg);
+  }
+}
+
+.aboutContainer h1{
+    font-family: var(--ff-h);
+    font-style: normal;
+    font-weight: 700;
+    font-size: clamp(40px, 3vw, 64px);
+    line-height: 80px;
+    text-align: center;
+    color: #051145;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#smallText a,cite{
+  text-decoration: none ;
+     font-family: var(--rr-ff-p);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--text-body);
+    margin: 0 2px;
+}
+#smallText a:hover,
+#smallText a.active{
+  color: var(--theme-1);
+}
+
+#smallText {
+  text-align: center ;
+}
+
+@media screen and (max-width:1200px){
+  #animationImgOne,#aboutOfHero{
+    display: none !important;
+  }
+}
+/* end aboute hero section  */
+
+
+/* start counter section  */
+.counterWrapper{
+  width: 100%;
+  min-height: 250px;
+  background-color: var(--common-white) ;
+  box-shadow: var(--shadow2);
+  margin-top: 30px;
+ overflow: hidden;
+ border-radius: 6px;
+
+}
+
+.counterRow{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.counterRow .counterLastChild{
+  border: none;
+}
+.counterOne{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-right: solid 2px rgb(212, 212, 212);
+  margin-top: 20px;
+}
+
+@media screen and (max-width:768px) {
+  .counterOne{
+    width: 50%;
+  }
+  .counterSecondChild{
+    border: none;
+  }
+}
+
+.connectCssClass{
+  font-weight: 800;
+}
+/* copy */
+
+.counterParent{
+  width: 200px;
+  font-family: var(--ff-h);
+  color: var(--theme-1);
+}
+.hedingText{
+  margin-top: 20px;
+}
+.hedingText p{
+  text-transform: capitalize;
+}
+.counterText{
+  font-family: var(--primary-font);
+  font-size: small;
+  color: var(--common-black);
+  font-weight:100 !important;
+}
+/* copy */
+
+/* end counter section  */
+
+
+
+html  
+
+     <!-- START HERO SECTION  -->
+    <section id="aboutOfHero">
+      <div id="animationImgOne">
+        <img src="./assets/img/aboutSection-img/imgOne.png" alt="">
+        <img src="./assets/img/aboutSection-img/imgTwo.png" alt="">
+      </div>
+      <div class="container aboutContainer">
+       
+        <span>
+          <img src="./assets/img/aboutSection-img/inline-img (1).png" alt="">
+        </span>
+        
+        <span>
+        <img src="./assets/img/aboutSection-img/inline-img (2).png" alt="">
+        </span>
+
+        <div id="aboutHeadingText">
+          <h1>About</h1>
+          <div id="smallText">
+            <a class="active" href="#">Brulloft</a>
+            <cite>></cite>
+            <a href="#">About</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END HERO SECTION  -->
+
+  
+
+  for btn 
+
+  @media screen and (max-width:768px) {
+ nav .navBtnWrapper{
+  display: none !important ;
+ }
+ 
+}
+
+@media screen and (max-width:768px) {
+  .navBtnWrapper{
+    display: none !important;
+  }
+}
+
+
+@media screen and (max-width:1200px) {
+  .navResponsive{
+    display: none !important;
+  }
+  .floatClass{
+    margin-top: 10px !important;
+  }
+  nav{
+    padding: 10px !important;
+    margin: 0px !important;
+  }
+  .navBtnWrapper{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    width: 200px;
+  }
+}
+
+.navBtnWrapper:hover .navBtnChildOne{
+    width: 0%;
+    cursor: pointer;
+}
+
+
+
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);

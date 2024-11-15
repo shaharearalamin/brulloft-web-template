@@ -1,0 +1,582 @@
+/* Font link here  */
+
+@import url("https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* variabls */
+:root {
+  /* color  */
+  --common-white: #ffffff;
+  --common-black: #000000;
+  --primary-color-1: #ffbe34;
+  --primary-color-2: #091242;
+  --secondary-2: #f4f4f4;
+  --secondary-navy: rgba(9, 18, 66, 1);
+  --Heading-Font-color: #1c1f35;
+  --Paragraph-Font-color: #666c89;
+  --Gradiant-color: #ffb629, #ffda56, #ffd7a6;
+  --icon-bg-color: #273270;
+  --icon-border: 1px solid #4a57a1;
+  --shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
+
+  /* font size  */
+  --heading-font-size-1: clamp(50px, 4vw, 65px);
+  --heading-font-size-2: clamp(20px, 4vw, 65px);
+  --heading-font-size-3: clamp(15px, 3vw, 50px);
+  --paragraph-font-size: clamp(10px, 2vw, 16px);
+  --semibold: 500;
+  --bold: 700;
+
+  /* font family  */
+  --primary-font-Rubik: "Rubik", sans-serif;
+  --secondary-font-Krub: "Krub", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* START SLIDER SECTION  */
+#slider {
+  width: 100%;
+  min-height: 70vh;
+  background-color:#FAFBFF;
+  margin-bottom: 100px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.carousel {
+  margin: 50px auto;
+}
+.carousel .carousel-item {
+  color: #999;
+  overflow: hidden;
+  min-height: 120px;
+  font-size: 13px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 30px;
+  height: 30px;
+  background: #666;
+  text-shadow: none;
+  top: 4px;
+  text-decoration: none;
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 16px;
+}
+.carousel-control-prev {
+  left: auto;
+  right: 40px;
+}
+.carousel-control-next {
+  left: auto;
+}
+.carousel-indicators {
+  bottom: -80px;
+}
+.carousel-indicators li,
+.carousel-indicators li.active {
+  width: 17px;
+  height: 17px;
+  border-radius: 0;
+  margin: 1px 5px;
+  box-sizing: border-box;
+}
+.carousel-indicators li {
+  background: #e2e2e2;
+  border: 4px solid #fff;
+  list-style-type: none;
+}
+.carousel-indicators li.active {
+  color: #fff;
+  background: var(--theme-1);
+  border: 5px double;
+  border-radius: 50%;
+}
+.star-rating li {
+  padding: 0 2px;
+}
+
+/* my css */
+.cardImgWrapper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.kathleenWraper {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+.cardText h5 {
+  color: var(--theme-1);
+  font-weight: 600;
+  font-family: var(--ff-s);
+  font-size: 25px;
+}
+.cardText p {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: var(--ff-s);
+}
+.cardText {
+  margin-left: 20px;
+}
+.img1 img {
+  border-radius: 50%;
+}
+
+.star-rating i {
+  font-size: 20px;
+  color: #ffdc12 !important;
+}
+.sliderCard {
+  padding: 15px !important;
+}
+.sliderCard .card-text {
+  font-size: 16px !important;
+  font-family: var(--ff-h);
+}
+
+/* END SLIDER SECTION  */
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50%;
+  background: var(--theme-1);
+  text-shadow: none;
+  top: 4px;
+  margin-top: -51px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+}
+.carousel-control-prev i,
+.carousel-control-next i {
+  font-size: 10px;
+}
+.carousel-control-prev {
+  position: absolute !important;
+  top: 0 !important;
+  right: 50px !important;
+}
+
+.carousel-indicators {
+  margin-top: 400px !important;
+}
+
+/* add css */
+
+
+.jhonMartinText h5, .jhonP{
+  color: white !important;
+}
+
+.jhonMartin .sliderCard{
+  background: #091242 !important;
+  color: white !important;
+}
+
+.sliderParagraph {
+  background-color: #e8e8e8;
+  display: inline-block;
+  border-left: 6px solid var(--primary-color-1);
+  padding: 5px 10px;
+  font-family: var(--primary-font-Rubik);
+  font-weight: 400;
+  margin-top: 20px;
+  font-size: 15px;
+}
+.sliderContent h2 {
+  font-family: var(--primary-font-Rubik);
+  font-size: 30px;
+  font-weight: var(--semibold);
+}
+
+.img2 img {
+  max-width: 70px;
+  height: auto;
+}
+
+.kathleenSmith .sliderCard{
+  background: #F4F4F4 !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.sliderCardText {
+  font-family: var(--secondary-font-Krub);
+font-size: 14px;
+font-style: italic;
+font-weight: 500;
+line-height: 24.24px;
+text-align: left;
+
+}
+
+
+@media screen and (max-width:1200px) {
+  .carousel-indicators{
+    display: none !important;
+  }
+}
+@media screen and (max-width:768px) {
+  .img2 img {
+    max-width: 40px;
+    height: auto;
+  }
+  .jhonMartin{
+    margin-top: 20px !important;
+  }
+}
+
+/* Add wedding project css  */
+/* START CLIENTS SECTION  */
+
+.clientTextOne{
+  font-family: var(--ff-s);
+  color: var(--theme-1);
+  font-size: 20px;
+  padding-top: 15px;
+}
+.clientTextTwo{
+  font-family: var(--ff-h);
+  font-size: clamp(30px , 4vw , 45px );
+  color: var(--heading-1);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveupClintHeading .5s linear forwards;
+  font-weight: 800;
+}
+@keyframes moveupClintHeading {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* END CLIENTS SECTION  */
+
+
+
+
+/* ############################################################ */
+
+ /* START CARD BLOG SLIDER  */
+ #blogCard{
+    width: 100%;
+    min-height: 50vh ;
+    background: #ffffff;
+    margin: 30px 0px  0px 0px  !important;
+    /* padding: 100px  !important; */
+    position: relative !important;
+ }
+
+ .blogTextOne{
+  font-family: var(--ff-s);
+  color: var(--theme-1);
+  font-size: 20px;
+  padding-top: 15px;
+}
+.blogTextTwo{
+  font-family: var(--ff-h);
+  font-size: clamp(16px , 4vw , 45px );
+  color: var(--heading-1);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveupClintHeading .5s linear forwards;
+  font-weight: 800;
+}
+@keyframes moveupClintHeading {
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+ 
+
+ /* add slider css */
+ .item {
+  background: transparent;
+  color: #fff;
+  /* padding: 30px;
+  margin: 10px; */
+  text-align: center;
+  
+}
+
+.blogcardimg img {
+ height: 250px !important;
+ object-fit: cover !important;
+}
+
+.blogCardShadow{
+  text-align: start !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer !important;
+  transition: .3s ease-in-out !important;
+  border: 1px solid rgb(236, 236, 236) !important;
+  height: 480px !important;
+  
+}
+.blogCardShadow:hover{
+  box-shadow: var(--shadow) !important;
+  
+}
+
+.blogcardimg::before{
+  content: "";
+  background-color: rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 62%;
+  z-index: 9 !important;
+  transform: scalex(0);
+  transition: .4s ease-in-out;
+}
+
+.blogCardShadow:hover .blogcardimg::before{    
+    transform: scalex(1);
+    
+}
+
+.blogCardShadow img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: .2s ease-in-out;
+  position: relative;
+}
+
+.blogCardShadow:hover img {
+  transform: scale(1.05);
+  
+}
+
+.blogcardimg img{
+}
+
+.Blogicon{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between ;
+}
+
+.Blogicon i {
+  padding: 0px 10px ;
+  color: var(--theme-1) !important;
+}
+.Blogicon .spanParent {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap !important;
+}
+
+.date{
+  
+  background:var(--theme-1);
+  color: white ;
+  padding: 2px 10px ;
+  text-align: center;
+  margin-top: -120px !important;
+  z-index: 99 !important;
+ 
+}
+.date P{
+  padding: 0 !important;
+  margin: 0 !important;
+  background:var(--theme-1);
+  color: white ;
+  display: block;
+  font-size: 14px ;
+}
+.date .datep1{
+  font-size: 25px ;
+  font-weight: bold;
+}
+
+.spanParent a {
+  text-decoration: none;
+  color: #616161;
+  transition: .2s ease-in-out;
+}
+.spanParent a:hover {
+  text-decoration: none;
+  color: var(--theme-1);
+}
+
+.blogCardText{
+  text-transform: capitalize;
+  font-size: clamp(20px,20vw,25px);
+  color: var(--theme-1);
+  font-family: var(--ff-h);
+  margin: 15px 0px 0px  0px !important;
+}
+
+.blogCardBtn{
+  padding: 8px 0px ;
+  margin: 0;
+  text-decoration: none !important;
+  color: #616161;
+  font-family: var(--ff-h);
+}
+.blogCardBtn:hover{
+  color: var(--theme-1) !important;
+}
+.blogCardBtn i{
+  padding-left: 5px !important;
+  transition: .2s ease-in-out;
+}
+.blogCardBtn:hover i{
+  padding-left: 20px !important;
+}
+
+.blogCardBody {
+  padding: 40px 30px 30px 30px  !important;
+}
+
+.owl-nav button{
+  position: absolute !important;
+  top: 0 !important;
+  right: 0 !important;
+  background-color: var(--common-white) !important;
+  margin-top: -62px !important;
+  font-size: 20px !important;
+  color: rgb(0, 0, 0) !important;
+  border: 1px solid rgb(129, 129, 129) !important;
+  border-radius: .3rem;
+}
+.owl-nav button span {
+  margin: 10px !important;
+}
+.owl-nav .owl-prev {
+  margin: 0px  60px !important;
+  margin-top: -62px !important;
+}
+
+.owl-carousel .owl-stage {
+ height: 60vh !important;
+}
+
+@media screen and (max-width:1200px) {
+  #blogCard{
+    width: 100%;
+    min-height: 80vh ;
+    background: #ffffff;
+    margin: 50px 0px  0px 0px  !important;
+    /* padding: 100px  !important; */
+    position: relative !important;
+ }
+ 
+}
+
+ /* END CARD BLOG SLIDER  */
+
+
+ /* START BRANDING SECTION */
+ #branding{
+  width: 100%;
+  min-height: 30vh;
+  background-color: rgb(255, 255, 255);
+  margin: 20px 0px !important;
+ }
+ .brandingColOne{
+  height: 200px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+ }
+.brandingColTwo{
+  position: relative;
+  height: 200px ;
+  
+}
+ .brandingText h3 {
+  font-size: clamp(24px,5vw,24px);
+  font-weight: 500;
+  font-family: var(--ff-h);
+  color: var(--primary-color-2);
+ }
+
+ .brandingColTwo{
+  height: 200px !important;
+ }
+
+
+ /* END BRANDING SECTION */
+
+ 
+ /* ############################ brandign slider ################################ */
+ 
+
+ .brandingSliderParent{
+  margin-top:40px !important;
+ }
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sliderimg {
+  flex: 1 0 25%; /* Adjust to show 4 cards at a time */
+  box-sizing: border-box;
+  margin: 0px 0px;
+  background: transparent !important;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.sliderimg:hover{
+  color: rgb(119, 80, 80) !important;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .sliderimg {
+      flex: 1 0 33.33%; /* Show 3 cards at a time */
+  }
+}
+
+@media (max-width: 900px) {
+  .sliderimg {
+      flex: 1 0 50%; /* Show 2 cards at a time */
+  }
+}
+
+@media (max-width: 600px) {
+  .sliderimg {
+      flex: 1 0 100%; /* Show 1 card at a time */
+  }
+}
+
+
+ /* ############################ brandign slider ################################ */
